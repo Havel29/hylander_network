@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #Cambiate i nomi inserendo i nomi degli screen
-servers=("Bungeecord" "Vanilla" "Test" "Test2" "Test3")
+servers=("bungee" "hub" "survival")
 
 
 restart_server() {
     screen_name=$1
-    echo "Restarting $screen_name..."
+    echo "Restartando $screen_name..."
     screen -S $screen_name -X stuff "stop^M"  #Digita il comando stop all'interno del terminale del server
     sleep 10  #Attendi la terminazione del server
     screen -S $screen_name -X stuff "./start_script.sh^M"  #Fai ripartire il server (cambiate il nome a seconda del file shell che usate per startare il server)
