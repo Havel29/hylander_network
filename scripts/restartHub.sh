@@ -1,4 +1,4 @@
-screen_name="vanilla"
+screen_name="hub"
 echo "Restartando $screen_name..."
 screen -S $screen_name -X stuff "stop^M"  #Digita il comando stop all'interno del terminale del server
 sleep 10  #Attendi la terminazione del server
